@@ -31,7 +31,7 @@ export default async function AboutPage() {
             Full Stack Developer
           </p>
         </div>
-        <p className="text-muted-foreground text-lg py-4">I'm a passionate Full Stack Engineer with expertise in both frontend and backend development. With a strong foundation in various programming languages and frameworks, I thrive on creating seamless, efficient, and user-friendly web applications. My journey in tech has been driven by a love for problem-solving and a commitment to continuous learning. Whether it's designing intuitive interfaces or building robust server-side logic, I enjoy tackling challenges across the entire stack to deliver high-quality solutions.
+        <p className="text-muted-foreground text-lg py-4">I&apos;m a passionate Full Stack Engineer with expertise in both frontend and backend development. With a strong foundation in various programming languages and frameworks, I thrive on creating seamless, efficient, and user-friendly web applications. My journey in tech has been driven by a love for problem-solving and a commitment to continuous learning. Whether it&apos;s designing intuitive interfaces or building robust server-side logic, I enjoy tackling challenges across the entire stack to deliver high-quality solutions.
         </p>
       </div>
     </div>

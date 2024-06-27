@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
             Hello, I&apos;m Ridwan
           </h1>
-          <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">Dive into the world of backend development with expert tips, in-depth tutorials, and best practices on server-side technologies, architecture, performance optimization, and security. Whether you're a seasoned developer or just starting, this blogs offer valuable insights to enhance your backend skills.
+          <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">Dive into the world of backend development with expert tips, in-depth tutorials, and best practices on server-side technologies, architecture, performance optimization, and security. Whether you&apos;re a seasoned developer or just starting, this blogs offer valuable insights to enhance your backend skills.
           </p>
           <div className="flex flex-col gap-4 justify-center sm:flex-row">
             <Link
