@@ -6,17 +6,17 @@ tags: ["neovim", "termux"]
 published: true
 ---
 ***Termux*** is a powerful terminal emulator for Android that allows you to run a Linux environment directly on your phone without rooting it. In this blog, you will get a complete description on how to setup our termux environment for software development.       
-#### Installation
+## Installation
 Go to this GitHub repo and follow the steps to download Termux *[termux/termux-app](https://github.com/termux/termux-app)*.     
 ###### And don't install termux from **PlayStore** or you may get some errors.
-#### Starting Termux
+## Starting Termux
 Enter your first terminal session and and write these commands
 ```
 apt update
 apt upgrade
 ```
 This will update your required packages to the newest version.
-#### Install Ubuntu
+## Install Ubuntu
 Let me explain, Termux pretty much provide you a lot of the functionalities out of the box but it causes some conflicts with the versions of the packages. For example if you install rust in your machine via `pkg install rust` this will install rust in your machine but it doesn't install ***`rustup`*** which is a rust installation tool. But why is it required?? When you install a *LSP( We will get to that later in the blog )* like rust-analyzer it will show an error `This platform is not supported`. That's relevant for a lot of LSPs like lua-language-server for the lua language( We will get to that later as well ), clangd ( LSP for C ) and multiple other. That's why we are going to install **`Ubuntu`** a Linux distribution. So let's install Ubuntu. Write this following command in your terminal...
 ```
 pkg install proot-distro
@@ -33,7 +33,7 @@ By this you will enter into the distro. Remember after you exit your termux term
 ```
 proot-distro login ubuntu
 ```
-#### Install required packages
+## Install required packages
 We are going to use Neovim as our editor because *I can't exit Vim* And some other required packages are..
 - git ( To access git commands as we will need it in the future)
 - wget (To get some files across the internet )
@@ -46,7 +46,7 @@ We will install it via *apt* installer.
 apt install git wget python -y
 ```
 This will install the required packages in your system.
-#### Let's configure our NeoVim configuration
+## Let's configure our NeoVim configuration
 ###### Nerd fonts
 Before configuring NeoVim let's first configure our terminal. We will in install nerd-font in our local machine. This will provide us with beautiful dev-icons in a goody font. Write this command in your terminal.
 ```
