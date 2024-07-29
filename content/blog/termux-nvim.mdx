@@ -23,11 +23,11 @@ pkg install proot-distro
 ```
 This will install proot-distro in your machine. Proot-Distro is a tool that lets you run entire Linux distributions within your Android device including Ubuntu and multiple others. Let's install Ubuntu now...
 ```
-pd I Ubuntu
+pd I ubuntu
 ```
 Wait for a while as this might take some time but With this command you have installed Ubuntu in your machine. Let's log into it...
 ```
-pd sh Ubuntu
+pd sh ubuntu
 ```
 By this you will enter into the distro. Remember after you exit your termux terminal. You will be logged out of the distribution. Then you will have to log in it with...
 ```
@@ -48,25 +48,25 @@ apt install git wget python -y
 This will install the required packages in your system.
 ## Let's configure our NeoVim configuration
 ###### Nerd fonts
-Before configuring NeoVim let's first configure our terminal. We will in install nerd-font in our local machine. This will provide us with beautiful dev-icons in a goody font. Write this command in your terminal.
+Before configuring NeoVim let's first configure our terminal. We will first install nerd-font in our local machine. This will provide us with beautiful dev-icons and a goody font. Write this command in your terminal.
 ```
 wget https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/Hack/Regular/HackNerdFontMono-Regular.ttf ~/.termux/font.ttf
 ```
-***Don't change the the path ( ~/.config/nvim )***
+***Don't change the the path ( ~/.termux/font.ttf )***
 ***Install the font you like from this repo [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts). And, Get to the code and install it with  `https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/{path}` .
 ###### NeoVim
 Let's start with the part everyone likes. Configure NeoVim. If you enter NeoVim by  `vi .` or  `nvim .` It won't look good but we will make look good. Now write this command in your terminal.
 ```
 git clone https://github.com/ridwanalmahmud/init.lua.git ~/.config/nvim
 ```
-What's this?? This is my custom Neovim configuration. What boring?!! 😑 You thought I was going to include the whole thing about how I configured my NeoVim?? Maybe in another blog. What's the best thing about it?? The code is written in **Lua** which is a functional script programming language that's well documented and the code is written in different portions so it is easy to edit anything you want in here. There's another popular choice kickstart.nvim. I will give the repo link [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). Now enter your NeoVim with  `vi .` and voila. Errors...?? You may get some errors after entering NeoVim for the first time. Mostly it will me about ***LSP( Language server protocol )*** it provides snippets, completions and much more. To fix this...
+What's this?? This is my custom Neovim configuration. What boring?!! 😑 You thought I was going to include the whole thing about how I configured my NeoVim?? Maybe in another blog. What's the best thing about it?? The code is written in **Lua** which is a functional scripting programming language that's well documented and the code is written in different portions so it is easy to edit anything you want in here. There's another popular choice kickstart.nvim. I will give the repo link [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). Now enter your NeoVim with  `vi .` and voila. Errors...?? You may get some errors after entering NeoVim for the first time. Mostly it will be about ***LSP( Language server protocol )*** it provides snippets, completions and much more. To fix this...
 - First install the LSPs you want for what your needed language. I work with rust, go, typescript so I added them in the  ***`lsp.lua`***  file add your LSP in the  `ensure_installed`. You can see the available LSPs with the command `:Mason`
-- If you followed me here and you want to install may like working with anyone in rust, go or typescript. Follow along me.
+- If you followed me here and you want to install or you may like working with rust, go or typescript. Follow along with me.
 - If you have any other issues than go to my GitHub and make a issue in this repo [ridwanalmahmud/init.lua](https://github.com/ridwanalmahmud/init.lua)
 
 
 **Rust**.       
-Installing rust may go complicated so I don't want to write the whole thing. Go to the documentation and install rust from the Linux ( [Rust-docs]( https://www.rust-lang.org/learn/get-started ) )         
+Installing rust may go complicated so I don't want to write the whole thing. Go to the documentation and install rust for Linux ( [Rust-docs]( https://www.rust-lang.org/learn/get-started ) )         
 **Go**                        
 Install golang with....
 ```
@@ -77,7 +77,7 @@ First install NodeJS...
 ```
 apt install nodejs
 ```
-Then, let's install typescript.
+Then, install typescript.
 ```
 npm install typescript
 ```
@@ -158,6 +158,6 @@ set -g @continuum-restore 'on'
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 ```
-Now run `Ctrl-r` and `Ctrl-I` this will install the necessary plugins. Check the there respective repositories to find there works. And last but not the least *options and remaps* checkout my custom remaps and options and add or remove anything you like.
+Now run `Ctrl-r` and `Ctrl-a + I` this will install the necessary plugins. Check all the plugin's respective repositories to find how they function. And last but not the least *options and remaps* checkout my custom remaps and options and add or remove anything you like.
 Also checkout the config and plugins folder to understand what's going on.
-***Saying that I'm going offline. See you later fellas***
+***Saying that I'm going to bed, goodnight. And in case I don't see ya, Good morning, Good afternoon and Good evening***
